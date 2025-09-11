@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Laura Dyan</title>
+  <link rel="stylesheet" href="styles-contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+   <nav class="navbar">
+    <ul>
+      <li><a  href="index.html">HOME</a></li>
+      <li><a  href="portfolio.html">PORTFOLIO</a></li>
+      <li><a class="active" href="academic.html">ACADEMIC</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <main class="contact-wrapper">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        Have a question, collaboration idea, or just want to connect?  
+        Fill out the form below or reach out directly through email or social media.
+      </p>
+
+      <form action="https://formspree.io/f/xblgvjzl" method="POST" class="contact-form">
+        <label for="email">Your Email:</label>
+        <input id="email" type="email" name="email" placeholder="your@email.com" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </main>
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #F7F7F2;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #F7F7F2;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #4b2e2e; /* thin outer border */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  flex: 1; /* evenly spaced items */
+  border-left: 1px solid #4b2e2e;
+    list-style-type: none;
+}
+
+.navbar li:first-child {
+  border-left: none; /* remove first divider */
+}
+
+.navbar a {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 12pt;
+  font-style: italic;
+  color: #4b2e2e;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #C2C9D4;
+}
+
+/* Responsive nav bar - shrink but stay horizontal */
+@media (max-width: 600px) {
+  .navbar ul {
+    max-width: 95%;   /* slightly narrower */
+    margin: 1rem auto;
+  }
+
+  .navbar a {
+    padding: 0.5rem 0.6rem;   /* smaller padding */
+    font-size: 0.8rem;        /* slightly smaller text */
+    letter-spacing: 0.5px;    /* tighten spacing */
+  }
+}
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #4b2e2e;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  justify-items: center;
+}
+
+.portfolio-item {
+  text-align: center;
+  text-decoration: none; /* remove underline */
+  color: inherit;
+}
+
+.portfolio-item p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4b2e2e; /* matches your heading color */
+  text-decoration: none;
+}
+
+.portfolio-item:hover {
+  text-decoration: none;
+  color: #4b2e2e; /* stay the same color on hover */
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 500px; /* set equal height */
+  max-width: 450px;
+  object-fit: cover; /* crop image but keep proportions */
+  transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 50px;
+  padding-top: 50px;
+    list-style: none;
+}
+
+.social-icons a {
+  color: #4b2e2e; /* match your nav text */
+  font-size: 1.5rem; /* adjust size */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #C2C9D4;
+}

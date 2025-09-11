@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #F7F7F2;
+  color: #3a3a3a;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #F7F7F2;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #4b2e2e; /* thin outer border */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+    list-style-type: none;
+}
+
+.navbar li {
+  flex: 1; /* evenly spaced items */
+  border-left: 1px solid #4b2e2e;
+    list-style-type: none;
+}
+
+.navbar li:first-child {
+  border-left: none; /* remove first divider */
+}
+
+.navbar a {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 12pt;
+  font-style: italic;
+  color: #4b2e2e;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #C2C9D4;
+}
+
+/* Responsive nav bar - shrink but stay horizontal */
+@media (max-width: 600px) {
+  .navbar ul {
+    max-width: 95%;   /* slightly narrower */
+    margin: 1rem auto;
+  }
+
+  .navbar a {
+    padding: 0.5rem 0.6rem;   /* smaller padding */
+    font-size: 0.8rem;        /* slightly smaller text */
+    letter-spacing: 0.5px;    /* tighten spacing */
+  }
+}
+
+
+.back-button:hover {
+  color: #C2C9D4;
+}
+
+.academic-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.academic-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #4b2e2e;
+}
+
+.academic-section {
+  margin-bottom: 3rem;
+}
+
+.academic-section h2 {
+  font-size: 2rem;
+  color: #4b2e2e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 300; /* matches Academic Background heading */
+  letter-spacing: 1px; /* optional: makes it feel balanced */
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background-color: #F7F7F2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+}
+
+.course-card h3 {
+  font-size: 2rem;
+  color: #4b2e2e;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #3a3a3a;
+}

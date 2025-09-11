@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #F7F7F2;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background-color: #C2C9D4;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.logo {
+  width: 800px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive logo scaling */
+@media (max-width: 600px) {
+  .logo {
+    width: 400px;   /* smaller logo on iPhone screens */
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Navigation */
+.navbar {
+  background-color: #F7F7F2;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #4b2e2e; /* thin outer border */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.navbar li {
+  flex: 1; /* evenly spaced items */
+  border-left: 1px solid #4b2e2e;
+}
+
+.navbar li:first-child {
+  border-left: none; /* remove first divider */
+}
+
+.navbar a {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 12pt;
+  font-style: italic;
+  color: #4b2e2e;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #C2C9D4;
+}
+
+/* Responsive nav bar - shrink but stay horizontal */
+@media (max-width: 600px) {
+  .navbar ul {
+    max-width: 95%;   /* slightly narrower */
+    margin: 1rem auto;
+  }
+
+  .navbar a {
+    padding: 0.5rem 0.6rem;   /* smaller padding */
+    font-size: 0.8rem;        /* slightly smaller text */
+    letter-spacing: 0.5px;    /* tighten spacing */
+  }
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-image img {
+  max-width: 400px;
+}
+
+.about-text {
+  max-width: 450px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-text h2 {
+    font-size: 32pt;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .about-image img {
+        max-width: 300px;
+        margin-top: -20px;
+    }
+    
+    .about-text {
+        font-size: 12pt;
+    }
+    
+    .about-text h2 {
+        font-size: 25pt;
+    }
+}
+
+/* Footer */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.social-icons a {
+  color: #4b2e2e; /* match your nav text */
+  font-size: 1.5rem; /* adjust size */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #C2C9D4; /* soft blue hover */
+}
