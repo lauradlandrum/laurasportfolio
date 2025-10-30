@@ -7,6 +7,11 @@ body {
   padding: 1rem;
 }
 
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+  font-weight: normal;
+}
+
+
 /* Navigation */
 .navbar {
   background-color: #F7F7F2;
